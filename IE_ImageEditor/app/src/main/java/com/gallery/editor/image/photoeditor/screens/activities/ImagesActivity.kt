@@ -25,7 +25,6 @@ import com.gallery.editor.image.photoeditor.utils.Constants
 import com.gallery.editor.image.photoeditor.utils.Utils
 import com.gallery.editor.image.photoeditor.utils.navigations.ActivityNavigator
 import com.gallery.editor.image.photoeditor.utils.navigations.FragmentNavigator
-import com.gallery.editor.image.photoeditor.utils.sdk.Ads
 import com.media.converter.photogif.videogif.gifmaker.screens.fragments.AlbumFragment
 import com.media.converter.photogif.videogif.gifmaker.screens.fragments.ImageFragment
 import kotlinx.android.synthetic.main.activity_images.*
@@ -104,7 +103,6 @@ class ImagesActivity : AppCompatActivity(), View.OnClickListener {
                 if (imageFragment?.isVisible!!) {
                     FragmentNavigator(supportFragmentManager).removeFragmentTransaction(imageFragment!!)
                 } else {
-                    Ads.f(baseContext)
                     ActivityNavigator(this).finishActivity()
                 }
             }
@@ -130,27 +128,7 @@ class ImagesActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    /**
-     * init ads
-     */
-    fun initAds() {
-        val rlads = findViewById(R.id.rl_ads) as RelativeLayout
-        Ads.b(this, rlads, object : Ads.OnAdsListener {
-            override fun onError() {
-                rlads.visibility = View.GONE
-            }
 
-            override fun onAdLoaded() {
-                rlads.visibility = View.VISIBLE
-
-            }
-
-            override fun onAdOpened() {
-                rlads.visibility = View.VISIBLE
-
-            }
-        })
-    }
 
     /**
      * init dialog
@@ -172,7 +150,6 @@ class ImagesActivity : AppCompatActivity(), View.OnClickListener {
      * init view
      */
     fun initView() {
-        initAds()
         initDialog()
         initToolbar()
         initFragment()

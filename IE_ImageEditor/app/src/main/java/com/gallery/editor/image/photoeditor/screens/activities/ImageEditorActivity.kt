@@ -27,7 +27,6 @@ import com.gallery.editor.image.photoeditor.screens.fragments.TimeStampFragment
 import com.gallery.editor.image.photoeditor.utils.*
 import com.gallery.editor.image.photoeditor.utils.navigations.ActivityNavigator
 import com.gallery.editor.image.photoeditor.utils.navigations.FragmentNavigator
-import com.gallery.editor.image.photoeditor.utils.sdk.Ads
 import com.gallery.editor.image.photoeditor.widgets.imageview.BrushView
 import com.gallery.editor.image.photoeditor.widgets.imageview.GliterView
 import com.gallery.editor.image.photoeditor.widgets.simplecropview.CropImageView
@@ -102,7 +101,6 @@ class ImageEditorActivity : AppCompatActivity(), View.OnClickListener, BitmapAct
     }
 
     override fun onBackPressed() {
-        Ads.f(baseContext)
         if (isQuestion && !checkFragmentShow()) {
             question.show()
         } else {
@@ -129,7 +127,6 @@ class ImageEditorActivity : AppCompatActivity(), View.OnClickListener, BitmapAct
                 if (isQuestion) {
                     question.show()
                 } else {
-                    Ads.f(baseContext)
                     ActivityNavigator(this).finishActivity()
                 }
             }
@@ -140,7 +137,6 @@ class ImageEditorActivity : AppCompatActivity(), View.OnClickListener, BitmapAct
                 } else {
                     saveDialog.show()
                 }
-                Ads.f(baseContext)
             }
             image_redo.id -> {
                 handleRedo()

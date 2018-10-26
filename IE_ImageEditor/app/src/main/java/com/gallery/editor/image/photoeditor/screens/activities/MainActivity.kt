@@ -13,12 +13,12 @@ import com.gallery.editor.image.photoeditor.R
 import com.gallery.editor.image.photoeditor.dialogs.RateAppDialog
 import com.gallery.editor.image.photoeditor.utils.Utils
 import com.gallery.editor.image.photoeditor.utils.navigations.ActivityNavigator
-import com.gallery.editor.image.photoeditor.utils.sdk.Ads
-import com.zer.android.newsdk.ZAndroidSDK
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private val REQUEST_CODE_PERMISSION: Int = 100
+    private val DURATION_START: Int = 3000
+    private val DURATION_END: Int = 1200
     private val PERMISSION = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE)
     private lateinit var rateDialog: RateAppDialog
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,10 +26,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION or WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION or WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
-//        handleLoopAnimatedBackground()
         var animation = background.getDrawable() as AnimationDrawable
-        animation.setEnterFadeDuration(3000)
-        animation.setExitFadeDuration(1200)
+        animation.setEnterFadeDuration(DURATION_START)
+        animation.setExitFadeDuration(DURATION_END)
         animation.start()
         checkPermission()
     }
@@ -63,7 +62,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if (requestCode == REQUEST_CODE_PERMISSION) {
             if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 initView()
-                ZAndroidSDK.onPermissionGranted(this)
             } else {
                 finish()
             }
@@ -78,8 +76,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * init view
      */
     fun initView() {
-        ZAndroidSDK.init(this@MainActivity)
-        Ads.f(baseContext)
         Utils.creatFolder()
         image_editor.setOnClickListener(this)
         text_editor.setOnClickListener(this)
@@ -106,13 +102,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (Utils.checkPermission(this, PERMISSION) == PackageManager.PERMISSION_GRANTED) {
                 initView()
-                ZAndroidSDK.onPermissionGranted(this)
             } else {
                 requestPermissions(PERMISSION, REQUEST_CODE_PERMISSION)
             }
         } else {
             initView()
-            ZAndroidSDK.onPermissionGranted(this)
         }
     }
 }

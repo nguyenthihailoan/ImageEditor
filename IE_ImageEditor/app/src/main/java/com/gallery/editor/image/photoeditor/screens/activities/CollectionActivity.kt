@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.view.View
 import android.view.WindowManager
-import android.widget.RelativeLayout
 import com.gallery.editor.image.photoeditor.BuildConfig
 import com.gallery.editor.image.photoeditor.R
 import com.gallery.editor.image.photoeditor.dialogs.ImageDialog
@@ -19,7 +18,6 @@ import com.gallery.editor.image.photoeditor.utils.CollectionImageLoader
 import com.gallery.editor.image.photoeditor.utils.Constants
 import com.gallery.editor.image.photoeditor.utils.SpaceItemDecorationGrid
 import com.gallery.editor.image.photoeditor.utils.navigations.ActivityNavigator
-import com.gallery.editor.image.photoeditor.utils.sdk.Ads
 import com.media.converter.photogif.videogif.gifmaker.adapters.ImagesAdapter
 import kotlinx.android.synthetic.main.activity_collection.*
 import java.io.File
@@ -37,7 +35,6 @@ class CollectionActivity : AppCompatActivity(), ImageCollectionCallback {
         window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION or WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION or WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_collection)
-        initAds()
         initDialog()
         initListImage()
     }
@@ -62,27 +59,6 @@ class CollectionActivity : AppCompatActivity(), ImageCollectionCallback {
     override fun onLoadedFailImage() {
     }
 
-    /**
-     * init ads
-     */
-    fun initAds() {
-        val rlads = findViewById(R.id.rl_ads) as RelativeLayout
-        Ads.b(this, rlads, object : Ads.OnAdsListener {
-            override fun onError() {
-                rlads.visibility = View.GONE
-            }
-
-            override fun onAdLoaded() {
-                rlads.visibility = View.VISIBLE
-
-            }
-
-            override fun onAdOpened() {
-                rlads.visibility = View.VISIBLE
-
-            }
-        })
-    }
 
     /**
      * init dialog
