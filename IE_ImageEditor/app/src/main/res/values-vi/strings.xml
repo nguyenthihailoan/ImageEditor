@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhotoEditor</string>
+    <string name="photo_editor">PHOTO EDITOR</string>
+    <string name="be_lovely_and_beautiful">Be lovely and beautiful</string>
+    <string name="title_activity_images">ImagesActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading">Đang tải...</string>
+    <string name="albums">Albums</string>
+    <string name="capture_image_error">Chụp ảnh bị lỗi</string>
+    <string name="selecte_other_image">Hãy chọn 1 ảnh khác để chỉnh sửa</string>
+    <string name="adjust">Adjust</string>
+    <string name="effectChildren">Effects</string>
+    <string name="brush">Brush</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="crop">Crop</string>
+    <string name="rotate">Rotate</string>
+    <string name="exp">Exposure</string>
+    <string name="contr">Contrast</string>
+    <string name="temp">Temperature</string>
+    <string name="vintage">Vintage</string>
+    <string name="grain">Grain</string>
+    <string name="sat">Saturation</string>
+    <string name="shaw">Shadow</string>
+    <string name="colortint">Colortint</string>
+
+    <string name="crop_11">1:1</string>
+    <string name="crop_34">3:4</string>
+    <string name="crop_43">4:3</string>
+    <string name="crop_916">9:16</string>
+    <string name="crop_169">16:9</string>
+    <string name="crop_circle">Circle</string>
+    <string name="crop_free">Free</string>
+    <string name="crop_error">crop image error</string>
+    <string name="editor">Chỉnh sửa</string>
+    <string name="select_effect">Hãy chọn một hiệu ứng</string>
+    <string name="share">Chia sẻ</string>
+    <string name="view">Hiển thị</string>
+    <string name="image">Ảnh</string>
+    <string name="question">Cảnh báo</string>
+    <string name="content_question">Có sự thay đổi với ảnh của bạn. Bạn vẫn muốn rời trang?</string>
+    <string name="back">Trở về</string>
+    <string name="collection">Bộ sưu tập</string>
+    <string name="save_image">Lưu ảnh</string>
+    <string name="content_save_image">Không có sự thay đổi nào cho ảnh của bạn. Bạn vẫn muốn lưu?</string>
+    <string name="save">Lưu</string>
+    <string name="content_rate">Hãy đánh giá ứng dụng 5 sao nếu bạn thực sự thích nó!!</string>
+    <string name="not_now">Not Now</string>
+    <string name="rate_app">Rate App!!</string>
+</resources>

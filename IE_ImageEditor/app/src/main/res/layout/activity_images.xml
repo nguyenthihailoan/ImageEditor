@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.activities.ImagesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginBottom="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_16"
+            android:src="@drawable/back_selector" />
+
+        <com.gallery.editor.image.photoeditor.widgets.textview.TextViewMedium
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_24" />
+
+        <ImageView
+            android:id="@+id/image_camera"
+            android:layout_width="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_height="@dimen/dp_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/camera_selector" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/gragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_ads"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></RelativeLayout>
+</LinearLayout>

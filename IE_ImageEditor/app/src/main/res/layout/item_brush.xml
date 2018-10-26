@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_brush"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="@dimen/dp_80"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:padding="@dimen/dp_10"
+        android:id="@+id/image_brush"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/brush_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a45980ff"
+        android:visibility="gone" />
+</android.support.constraint.ConstraintLayout>

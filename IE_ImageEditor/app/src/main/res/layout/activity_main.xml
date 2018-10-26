@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_1"
+    tools:context=".screens.activities.MainActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/animated_image" />
+
+    <com.gallery.editor.image.photoeditor.widgets.textview.TextViewHead
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_100"
+        android:text="@string/photo_editor"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.gallery.editor.image.photoeditor.widgets.textview.TextViewMedium
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/be_lovely_and_beautiful"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_editor"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginBottom="@dimen/dp_80"
+        android:background="@drawable/icon_main_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rl_collection"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/image_editor"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_editor_selector" />
+
+        <com.gallery.editor.image.photoeditor.widgets.textview.TextViewMedium
+            android:layout_width="wrap_content"
+            android:id="@+id/text_editor"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_editor"
+            android:layout_centerHorizontal="true"
+            android:text="@string/editor"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_collection"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:background="@drawable/icon_main_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_editor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rl_editor">
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/image_collection"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_collection_selector" />
+
+        <com.gallery.editor.image.photoeditor.widgets.textview.TextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_collection"
+            android:layout_centerHorizontal="true"
+            android:text="@string/collection"
+            android:id="@+id/text_collection"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

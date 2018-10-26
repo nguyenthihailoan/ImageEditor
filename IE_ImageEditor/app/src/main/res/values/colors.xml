@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121413</color>
+    <color name="colorPrimaryDark">#121413</color>
+    <color name="accent_material_dark_1">#ffffff</color>
+    <color name="colorBackground">#121413</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_blue">#5980ff</color>
+
+    <color name="color1">#000000</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#FF3334</color>
+    <color name="color4">#0099FF</color>
+    <color name="color5">#34CC67</color>
+    <color name="color6">#CD65FF</color>
+    <color name="color7">#FFCC67</color>
+    <color name="color8">#143a52</color>
+    <color name="color9">#4a3333</color>
+    <color name="color10">#8d6262</color>
+    <color name="color11">#005792</color>
+    <color name="color12">#52524e</color>
+    <color name="color13">#8f8787</color>
+    <color name="color14">#f4806d</color>
+    <color name="color15">#368c72</color>
+    <color name="color16">#ed8d8d</color>
+    <color name="color17">#a393eb</color>
+    <color name="color18">#ffb6b9</color>
+    <color name="color19">#a1eafb</color>
+    <color name="color20">#fccde2</color>
+    <color name="color21">#77abb7</color>
+    <color name="color22">#e0fcff</color>
+    <color name="color23">#ffcef3</color>
+    <color name="color24">#fef8e6</color>
+
+    <array name="listcolor">
+        <item>#000000</item>
+        <item>#FFFFFF</item>
+        <item>#FF3334</item>
+        <item>#0099FF</item>
+        <item>#34CC67</item>
+        <item>#CD65FF</item>
+        <item>#FFCC67</item>
+        <item>#143a52</item>
+        <item>#4a3333</item>
+        <item>#8d6262</item>
+        <item>#005792</item>
+        <item>#52524e</item>
+        <item>#8f8787</item>
+        <item>#f4806d</item>
+        <item>#368c72</item>
+        <item>#ed8d8d</item>
+        <item>#a393eb</item>
+        <item>#ffb6b9</item>
+        <item>#a1eafb</item>
+        <item>#fccde2</item>
+        <item>#77abb7</item>
+        <item>#e0fcff</item>
+        <item>#ffcef3</item>
+        <item>#fef8e6</item>
+    </array>
+</resources>

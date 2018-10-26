@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">PhotoEditor</string>
+    <string name="photo_editor">PHOTO EDITOR</string>
+    <string name="be_lovely_and_beautiful">Be lovely and beautiful</string>
+    <string name="title_activity_images">ImagesActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading">Loading...</string>
+    <string name="albums">Albums</string>
+    <string name="capture_image_error">Capture image error</string>
+    <string name="selecte_other_image">Please select a image to editor</string>
+    <string name="adjust">Adjust</string>
+    <string name="effectChildren">Effects</string>
+    <string name="brush">Brush</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="crop">Crop</string>
+    <string name="rotate">Rotate</string>
+    <string name="exp">Exposure</string>
+    <string name="contr">Contrast</string>
+    <string name="temp">Temperature</string>
+    <string name="vintage">Vintage</string>
+    <string name="grain">Grain</string>
+    <string name="sat">Saturation</string>
+    <string name="shaw">Shadow</string>
+    <string name="colortint">Colortint</string>
+
+    <string name="crop_11">1:1</string>
+    <string name="crop_34">3:4</string>
+    <string name="crop_43">4:3</string>
+    <string name="crop_916">9:16</string>
+    <string name="crop_169">16:9</string>
+    <string name="crop_circle">Circle</string>
+    <string name="crop_free">Free</string>
+    <string name="crop_error">crop image error</string>
+    <string name="editor">Editor</string>
+    <string name="select_effect">Please select a effect</string>
+    <string name="share">share</string>
+    <string name="view">view</string>
+    <string name="image">Image</string>
+    <string name="question">Question</string>
+    <string name="save_image">Save Image</string>
+    <string name="content_question">Have change with your image. Do you want to go back?</string>
+    <string name="content_save_image">Your image has no change. Do you want to save it?</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="collection">Collection</string>
+
+    <string name="content_rate">Please rate 5 star if you like it!</string>
+    <string name="not_now">Not now</string>
+    <string name="rate_app">Rate app!</string>
+</resources>
